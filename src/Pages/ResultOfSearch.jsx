@@ -34,7 +34,7 @@ export default function ResultOfSearch() {
                   <div className="result_div">
                       {resultOfSearch?.map((Meal)=>{
                           return(
-                              <NavLink to={`/recipe/${Meal.idMeal}`} style={{textDecoration:'none'}}  key={Meal.idMeal}>
+                              <NavLink to={`/React-recipe-app/recipe/${Meal.idMeal}`} style={{textDecoration:'none'}}  key={Meal.idMeal}>
                                   <Card title={Meal.strMeal} imageUrl={Meal.strMealThumb}/>
                               </NavLink>
                           )

@@ -34,7 +34,7 @@ export default function ResultByCategory() {
                   <div className="result_div">
                       {resultByCategory.map((Meal)=>{
                           return(
-                              <NavLink to={`/recipe/${Meal.idMeal}`}  key={Meal.idMeal}>
+                              <NavLink to={`/React-recipe-app/recipe/${Meal.idMeal}`}  key={Meal.idMeal}>
                                   <Card title={Meal.strMeal} imageUrl={Meal.strMealThumb}/>
                               </NavLink>
                           )
