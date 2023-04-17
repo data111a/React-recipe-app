@@ -12,7 +12,7 @@ export const HeaderBar = () => {
         <header>
             <div className='header_search_bar'>
                 <div className='logo'>
-                    <NavLink to='/'>
+                    <NavLink to='https://data111a.github.io/React-recipe-app'>
                         <div className='logo' style={{display: 'flex',alignItems:'center',justifyContent:'center'}}>
                             <img src={logo} className='logo_img' alt='logo' />
                         </div>
@@ -20,32 +20,32 @@ export const HeaderBar = () => {
                 </div>
                 <div className='search_bar'>
                     <input type="text" className='search_input' value={inputValue} placeholder='Any meal' onChange={(e) => setInputValue(e.target.value)} />
-                        <NavLink to={`/search/${inputValue}`}>
+                        <NavLink to={`/React-recipe-app/search/${inputValue}`}>
                             <button className='search_button' onClick={() => setInputValue('')}>Search</button>
                         </NavLink>
                 </div>
             </div>
             <CategoyNavBar>
                 <div className='category'>
-                    <NavLink to='/category/Italian'>
+                    <NavLink to='/React-recipe-app/category/Italian'>
                         <GiFullPizza />
                         <p>Italian</p>
                     </NavLink>
                 </div>
                 <div className='category'>
-                    <NavLink to='/category/Chinese'>
+                    <NavLink to='/React-recipe-app/category/Chinese'>
                         <GiNoodles />
                         <p>Chinese</p>
                     </NavLink>
                 </div>
                 <div className='category'>
-                    <NavLink to='/category/American'>
+                    <NavLink to='/React-recipe-app/category/American'>
                         <GiHamburger />
                         <p>American</p>
                     </NavLink>
                 </div>
                 <div className='category'>
-                    <NavLink to='/category/British'>
+                    <NavLink to='/React-recipe-app/category/British'>
                         <GiPieSlice />
                         <p>British</p>
                     </NavLink>

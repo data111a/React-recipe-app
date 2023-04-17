@@ -7,10 +7,10 @@ import ResultOfSearch from "./ResultOfSearch"
 export default function Pages() {
   return (
     <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/category/:area" element={<ResultByCategory />}/>
-        <Route path="/recipe/:id" element={<Recipe />}/>
-        <Route path="/search/:name" element={<ResultOfSearch />} />
+        <Route path="/React-recipe-app" element={<Home />}/>
+        <Route path="/React-recipe-app/category/:area" element={<ResultByCategory />}/>
+        <Route path="/React-recipe-app/recipe/:id" element={<Recipe />}/>
+        <Route path="/React-recipe-app/search/:name" element={<ResultOfSearch />} />
     </Routes>
   )
 }
