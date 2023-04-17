@@ -26,7 +26,7 @@ export default function Home() {
       <div className='home'>
         <div className='random_meal'>
           <h3>Random meal : </h3>
-          <NavLink to={`/recipe/${randomMeal?.idMeal}`}>
+          <NavLink to={`/React-recipe-app/recipe/${randomMeal?.idMeal}`}>
             <div className='random_meal_div'>
               <Card title={randomMeal?.strMeal} imageUrl={randomMeal?.strMealThumb}/>
             </div>

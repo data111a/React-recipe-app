@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://data111a.github.io/React-recipe-app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -12,7 +12,7 @@ export const HeaderBar = () => {
         <header>
             <div className='header_search_bar'>
                 <div className='logo'>
-                    <NavLink to='https://data111a.github.io/React-recipe-app'>
+                    <NavLink to='React-recipe-app/'>
                         <div className='logo' style={{display: 'flex',alignItems:'center',justifyContent:'center'}}>
                             <img src={logo} className='logo_img' alt='logo' />
                         </div>
