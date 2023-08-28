@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom'
 export default function Home() {
   const [randomMeal,setRandomMeal] = useState([])
   const [isLoading,setIsLoading] = useState(false)
+  
   const getRandomMeal = async () =>{
     setIsLoading(true)
     const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`)
