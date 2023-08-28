@@ -2,15 +2,20 @@ import { GiFullPizza,GiHamburger,GiNoodles,GiPieSlice } from 'react-icons/gi'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
 import { useState } from 'react';
-
+import {BsMoon,BsSun} from 'react-icons/bs'
 import logo from '/Logo.png'
+import { useContext } from 'react';
+import { myContext } from '../context/myContext';
 
 
 export const HeaderBar = () => {
     const [inputValue, setInputValue] = useState('')
+    const {changeTheme,theme} = useContext(myContext)
+
     return (
         <header>
             <div className='header_search_bar'>
+            {theme==='dark'?<BsMoon onClick={changeTheme} className='themeicon' style={{color:'orange',fontSize:'24px'}}/>:<BsSun onClick={changeTheme} className='themeicon' style={{color:'orange',fontSize:'24px'}} />}
                 <div className='logo'>
                     <NavLink to='React-recipe-app/'>
                         <div className='logo' style={{display: 'flex',alignItems:'center',justifyContent:'center'}}>
@@ -57,7 +62,6 @@ export const HeaderBar = () => {
 
 const CategoyNavBar = styled.nav`
     display: flex;
-    border-bottom: 10px solid orange;
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -65,9 +69,7 @@ const CategoyNavBar = styled.nav`
     *{
         text-decoration: none;
     }
-    .category svg{
-        color : rgb(109, 39, 39);
-    }
+    
     p{
         margin:0;
     }

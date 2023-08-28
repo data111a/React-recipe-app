@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 export const Card = ({imageUrl, title}) =>{
   return (
-    <StyledCard>
+    <StyledCard className="card">
         <div className="img-container">
             <img src={imageUrl} alt="" />
         </div>
