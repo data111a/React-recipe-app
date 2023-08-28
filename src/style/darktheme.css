@@ -3,8 +3,9 @@
   flex-direction: column;
   min-width: 250px;
   background-color: #0c1424;
+  min-height: 100vh;
 }
-.dark-app>*,.dark-app h1, .dark-app h2{
+.dark-app>*,.dark-app h1, .dark-app h2,.dark-app h3{
   color: white;
 }
 .dark-app p {
