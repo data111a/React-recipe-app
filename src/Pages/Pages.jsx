@@ -9,7 +9,7 @@ import { useContext } from "react"
 
 export default function Pages() {
   const { theme,changeTheme } = useContext(myContext)
-  console.log(theme);
+  
   return (
     <Routes>
         <Route path="/React-recipe-app" element={<Home />}/>
